@@ -1,0 +1,21 @@
+---
+- name: Show Me the Money
+  hosts: routers
+  gather_facts: no
+  connection: network_cli
+
+  tasks:
+
+    - name: Shoe Configuration Data
+      ios_command:
+        commands: 
+          - show run
+          - show ip int brief
+          - show version
+      register: show_config
+
+    - name: Save the Output
+      copy:
+        content: "{{show_config.stdout[0]}}"
+        dest: "backups/{{inventory_hostname}}-config.txt"
+...
