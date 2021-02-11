@@ -1,0 +1,18 @@
+#Hosts
+[cisco:children]
+routers
+
+[routers]
+Milo ansible_host=192.168.79.1
+Otis ansible_host=192.168.79.2
+
+#Variables
+[cisco:vars]
+ansible_connection=ansible.netcommon.network_cli
+ansible_network_os=cisco.ios.ios
+ansible_user=cisco
+ansible_password=cisco
+ansible_become=yes
+ansible_become_method=enable
+ansible_become_password=cisco
+

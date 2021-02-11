@@ -1,0 +1,133 @@
+Building configuration...
+
+
+Current configuration : 3662 bytes
+!
+! Last configuration change at 20:00:03 UTC Wed Feb 10 2021
+!
+version 16.9
+service timestamps debug datetime msec
+service timestamps log datetime msec
+platform qfp utilization monitor load 80
+no platform punt-keepalive disable-kernel-core
+!
+hostname Otis
+!
+boot-start-marker
+boot-end-marker
+!
+!
+enable secret 5 $1$8eHR$RB1he1S9.qPiaDAts0tIQ1
+!
+no aaa new-model
+!
+ip domain name Jakes.Domain
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+subscriber templating
+multilink bundle-name authenticated
+!
+!
+!
+crypto pki trustpoint TP-self-signed-3642862998
+ enrollment selfsigned
+ subject-name cn=IOS-Self-Signed-Certificate-3642862998
+ revocation-check none
+ rsakeypair TP-self-signed-3642862998
+!
+!
+crypto pki certificate chain TP-self-signed-3642862998
+ certificate self-signed 01
+  30820330 30820218 A0030201 02020101 300D0609 2A864886 F70D0101 05050030 
+  31312F30 2D060355 04031326 494F532D 53656C66 2D536967 6E65642D 43657274 
+  69666963 6174652D 33363432 38363239 3938301E 170D3231 30323130 31353133 
+  34375A17 0D333030 31303130 30303030 305A3031 312F302D 06035504 03132649 
+  4F532D53 656C662D 5369676E 65642D43 65727469 66696361 74652D33 36343238 
+  36323939 38308201 22300D06 092A8648 86F70D01 01010500 0382010F 00308201 
+  0A028201 01009EAF 4B8BE0AF 70B87882 18FC5E78 DBB09B30 DF907DF0 D420D804 
+  5E28F9D1 BBAF9B74 42555949 9E57E86F 2285EC5B 004C2639 3FFEAB1E 346C8971 
+  C3D6A681 43069A75 AB31E3C3 6BAE48F6 1307DD14 EA3C331A A4421F6F 5EA55F9B 
+  6703223B BAB05603 58D4E84F 0875B3CB F5D53F0B 42741BA5 8657BC1E 4238867C 
+  FAC53DFA 1FBC57C6 B3153B77 69907D96 C9EF8CD2 83B45D9B C8814AF6 8D9BF5C1 
+  9D1D975F 3FF9872F CF06B5D6 0C2A4FF3 1D9BB362 06C3F89A 77E15C1F 90C209AB 
+  266EDF59 1B63ED2D 05C5032D 414B5C6F 0CACF96A 60974612 8E157B94 2559F25A 
+  32A627AA 7E204673 1BE76888 126FF5A8 9FBCAED5 DBA2CDC1 FC0DA535 95F03160 
+  54FD68DE C6C70203 010001A3 53305130 0F060355 1D130101 FF040530 030101FF 
+  301F0603 551D2304 18301680 1439BEF4 A7819086 C59E0582 CD7DE601 F3C1A43A 
+  12301D06 03551D0E 04160414 39BEF4A7 819086C5 9E0582CD 7DE601F3 C1A43A12 
+  300D0609 2A864886 F70D0101 05050003 82010100 73C56672 1EE14313 976070C6 
+  F87F8202 29894830 302462FB 29477C06 94DD4E0C BDF87DA2 04864D8B 332D6C98 
+  86B41873 E87682C6 06B5697C FD7F3D5E 2D85932E 966E64BF 2AB52089 D7A896CF 
+  5E76D538 59C3E72C 14DCB2B8 DEC9ADCA 69526766 4F4D63D7 C4F3AB1F 8F398E08 
+  ECC9E970 7F449BF2 A7525734 F8267439 DC8AB51D E3BDAE87 F73A79A7 B2D81F47 
+  9172DB9C A69B1CF2 7B423ED1 D011AB7A 954085EF 09F35F80 63FFBE2E EBB4C04A 
+  3494D816 13946F47 A6484E54 68513F87 C1B891F3 4BC8FFD8 471C96DF E2B07ED4 
+  9E3611B7 95997506 79CEDC89 7B1E88E8 D4872368 777C0662 8DE97770 B153D892 
+  C834E6D6 401A031F 27DC02C3 500FA040 564EEA26
+  	quit
+!
+license udi pid ISR4221/K9 sn FJC2341A1B0
+no license smart enable
+diagnostic bootup level minimal
+!
+spanning-tree extend system-id
+!
+!
+!
+username cisco password 0 cisco
+!
+redundancy
+ mode none
+!
+!
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/0/0
+ description This is my domain, all are welcome here, except if you try to hurt my mother I will destory you. Anyways hope you have funnnnn!
+ ip address 192.168.79.2 255.255.255.0
+ negotiation auto
+!
+interface GigabitEthernet0/0/1
+ no ip address
+ shutdown
+ negotiation auto
+!
+ip forward-protocol nd
+ip http server
+ip http authentication local
+ip http secure-server
+!
+!
+!
+!
+!
+!
+control-plane
+!
+banner motd ^CHello Friend! My name is Otis and I love my Dad, he is the greatest, I just have to make sure to not claw up the furniture or chew up any chords. I also love my brother Milo, but none compares to the love for my mother.^C
+!
+line con 0
+ transport input none
+ stopbits 1
+line vty 0 4
+ login local
+ transport input ssh
+!
+!
+!
+!
+!
+!
+end

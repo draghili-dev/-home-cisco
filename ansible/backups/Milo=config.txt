@@ -1,0 +1,104 @@
+Building configuration...
+
+
+Current configuration : 1338 bytes
+!
+! Last configuration change at 19:55:49 UTC Wed Feb 10 2021
+!
+version 16.8
+service timestamps debug datetime msec
+service timestamps log datetime msec
+platform qfp utilization monitor load 80
+no platform punt-keepalive disable-kernel-core
+!
+hostname Milo
+!
+boot-start-marker
+boot-end-marker
+!
+!
+enable secret 5 $1$Evju$EVskj7Si9McZZCYaY2n8X/
+!
+no aaa new-model
+!
+ip domain name Jakes.Domain
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+subscriber templating
+!
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+license udi pid ISR4221/K9 sn FGL2345LJ3A
+no license smart enable
+diagnostic bootup level minimal
+!
+spanning-tree extend system-id
+!
+!
+!
+username cisco password 0 cisco
+!
+redundancy
+ mode none
+!
+!
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/0/0
+ description This is Milo's domain, he likes to cuddle and is an overall chill cat.
+ ip address 192.168.79.1 255.255.255.0
+ negotiation auto
+!
+interface GigabitEthernet0/0/1
+ no ip address
+ shutdown
+ negotiation auto
+!
+ip forward-protocol nd
+ip http server
+ip http authentication local
+ip http secure-server
+!
+!
+!
+!
+!
+!
+control-plane
+!
+banner motd ^CGood day to you, my name is Milo and I am Jake's favorite cat...don't tell Otis!^C
+!
+line con 0
+ transport input none
+ stopbits 1
+line vty 0 4
+ login local
+ transport input ssh
+!
+wsma agent exec
+!
+wsma agent config
+!
+wsma agent filesys
+!
+wsma agent notify
+!
+!
+end
