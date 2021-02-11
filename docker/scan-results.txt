@@ -1,0 +1,8 @@
+cisco@DevvieFinal:~/devnetsba/docker$ sudo docker run -it devnet-scan
+Interface: eth0, type: EN10MB, MAC: 02:42:ac:11:00:02, IPv4: 172.17.0.2
+Starting arp-scan 1.9.7 with 256 hosts (https://github.com/royhills/arp-scan)
+192.168.200.3	02:42:d2:0d:09:8d	(Unknown: locally administered)
+
+1 packets received by filter, 0 packets dropped by kernel
+Ending arp-scan 1.9.7: 256 hosts scanned in 1.922 seconds (133.19 hosts/sec). 1 responded
+
