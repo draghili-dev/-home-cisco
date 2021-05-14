@@ -1,0 +1,34 @@
+Interface: ens33, type: EN10MB, MAC: 00:0c:29:1b:13:da, IPv4: 192.168.254.130
+Starting arp-scan 1.9.7 with 256 hosts (https://github.com/royhills/arp-scan)
+192.168.254.1	b0:95:75:8d:0b:6c	(Unknown)
+192.168.254.2	44:a8:42:04:dd:dc	Dell Inc.
+192.168.254.4	00:0c:29:93:21:10	VMware, Inc.
+192.168.254.100	00:50:56:2e:3a:a9	VMware, Inc.
+192.168.254.101	00:0c:29:18:7d:f0	VMware, Inc.
+192.168.254.103	00:0c:29:15:f7:ae	VMware, Inc.
+192.168.254.107	00:e0:4c:68:0c:be	REALTEK SEMICONDUCTOR CORP.
+192.168.254.108	b4:2e:99:a9:f1:b7	GIGA-BYTE TECHNOLOGY CO.,LTD.
+192.168.254.120	00:0c:29:d1:d6:61	VMware, Inc.
+192.168.254.123	6c:33:a9:75:5c:c5	Magicjack LP
+192.168.254.104	b8:27:eb:a3:5c:90	Raspberry Pi Foundation
+192.168.254.115	38:8b:59:75:1f:d5	Google, Inc.
+192.168.254.129	00:0c:29:59:ea:b0	VMware, Inc.
+192.168.254.159	d8:cb:8a:57:3e:62	Micro-Star INTL CO., LTD.
+192.168.254.126	48:d6:d5:88:a4:7a	Google, Inc.
+192.168.254.128	ac:67:84:97:a7:4c	(Unknown)
+192.168.254.155	58:2f:40:98:a5:b7	Nintendo Co.,Ltd
+192.168.254.181	24:fd:5b:04:81:9d	SmartThings, Inc.
+192.168.254.186	ac:84:c6:e3:43:9b	TP-LINK TECHNOLOGIES CO.,LTD.
+192.168.254.187	00:0c:29:8b:ed:42	VMware, Inc.
+192.168.254.149	30:d1:6b:9e:a8:4d	Liteon Technology Corporation
+192.168.254.196	cc:98:8b:47:c1:0c	SONY Visual Products Inc.
+192.168.254.168	f4:f5:d8:a1:57:f2	Google, Inc.
+192.168.254.194	e4:f0:42:18:3d:19	Google, Inc.
+192.168.254.200	1c:f2:9a:04:57:40	Google, Inc.
+192.168.254.197	a0:78:17:77:82:98	(Unknown)
+192.168.254.250	9c:ae:d3:b3:fd:09	Seiko Epson Corporation
+192.168.254.120	00:0c:29:d1:d6:61	VMware, Inc. (DUP: 2)
+192.168.254.169	90:b9:31:cf:e8:33	Apple, Inc.
+
+35 packets received by filter, 0 packets dropped by kernel
+Ending arp-scan 1.9.7: 256 hosts scanned in 2.063 seconds (124.09 hosts/sec). 29 responded

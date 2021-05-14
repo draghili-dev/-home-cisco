@@ -1,0 +1,35 @@
+NAME="Ubuntu"
+VERSION="21.04 (Hirsute Hippo)"
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME="Ubuntu 21.04"
+VERSION_ID="21.04"
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+VERSION_CODENAME=hirsute
+UBUNTU_CODENAME=hirsute
+/home/user/cisco/devnetsba
+user     tty1         2021-05-13 23:19 (:0)
+
+Required Programs
+git version 2.30.2
+
+Docker version 19.03.13, build cd8016b6bc
+
+ansible 2.10.9
+  config file = None
+  configured module search path = ['/home/user/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /home/user/.local/lib/python3.9/site-packages/ansible
+  executable location = /home/user/.local/bin/ansible
+  python version = 3.9.4 (default, Apr  4 2021, 19:38:44) [GCC 10.2.1 20210401]
+
+VS Code
+1.56.2
+054a9295330880ed74ceaedda236253b4f39a335
+x64
+ms-azuretools.vscode-docker
+ms-python.python
+ms-python.vscode-pylance
+ms-toolsai.jupyter
