@@ -1,0 +1,14 @@
+---
+
+- name: Show Me the Money
+  hosts: routers
+  gather_facts: false
+  connection: ansible.netcommon.network_cli
+
+  tasks:
+      ansible.netcommon.cli.command:
+        commands: show run | show ip interface brief | show version
+      register: output
+
+#     debug:
+#        var: output.stdout_lines
